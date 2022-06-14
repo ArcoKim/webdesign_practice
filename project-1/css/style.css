@@ -1,0 +1,54 @@
+@charset "utf-8";
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+#wrap {font-family: "맑음 고딕"; color: #333333; margin: 0 auto; 
+box-sizing: border-box; width: 1200px; font-size: 16px; position: relative;}
+
+.popupP {display: none; position: absolute; z-index: 999; top: 50%; left: 50%; 
+transform: translate(-50%, -50%);}
+.popup {height: 150px; background-color: white; border: 1px solid black; 
+padding: 20px;}
+.popup h2 {margin-bottom: 10px;}
+.popup button {float: right; padding: 3px;}
+header {height: 100px; background-color: #8b00ff; display: flex;
+align-items: center; justify-content: space-between;}
+header > a {margin-left: 20px;}
+nav {width: 55%;}
+.menubar {display: flex;}
+.menubar > li {position: relative; width: 25%;}
+.menubar > li > a {padding: 25px 50px; color: #fff; display: block; 
+text-align: center;}
+.submenu {position: absolute; width: 100%; display: none; z-index: 998;}
+.submenu li a {display: block; padding: 15px 50px; color: #fff; 
+text-align: center; background-color: violet;}
+.menubar > li > a:hover {background-color: plum; font-weight: bold;}
+.submenu li a:hover {background-color: magenta; font-weight: bold;}
+
+.slideCont {position: relative; height: 300px; overflow: hidden;}
+.slides {position: absolute;}
+
+.contents {display: flex;}
+.contents > div {width: 400px; height: 200px;}
+
+.part {display: flex; height: 17.5%;}
+.active {background-color: #fff; font-weight: bold;}
+.acL {display: block;}
+.part li:not(.active) {background-color: lightgrey;}
+.part li a {display: block; padding: 7px 14px;}
+.partItem {height: 82.5%;}
+.board li {background-color: rgb(139,0,256,0.1); display: flex; align-items: center;}
+.board li a {display: block; padding: 10px; flex: 7.5;}
+.board li span {float: right; flex: 2.5;}
+.gallery {height: 100%; background-color: rgb(139,0,256,0.3); display: none;}
+.gallery li {width: 30%; display: inline-block; margin: 20px 0 0 7px;}
+.gallery li a {width: 100%;}
+.gallery img {width: 100%;}
+
+.banner, .go {position: relative;}
+.banner p, .go p {display:block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+background-color: rgb(139,0,256,0.5); padding: 10px 20px; border-radius: 5px; color: #fff;}
+
+footer {height: 100px; display: flex; align-items: center; justify-content: space-between;
+background-color: #888; padding: 0 10px;}
+.footer_menu img {border-radius: 50px; margin-left: 10px;}

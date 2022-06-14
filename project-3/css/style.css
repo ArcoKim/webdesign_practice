@@ -1,0 +1,52 @@
+@charset "utf-8";
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style: none;}
+a {text-decoration: none; color: white;}
+#wrap {width: 1200px; height: 700px; margin: 0 auto; position: relative;}
+.pp {position: absolute; width: 100%; height: 100%; z-index: 999; display: none;}
+.popup {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+background-color: white; width: 600px; height: 200px; padding: 10px;}
+.popup h1 {text-align: center; margin: 15px 0;}
+.popup p {margin-bottom: 15px;}
+.popup button {float: right;}
+header { height: 100px; background-color: dodgerblue; display: flex; 
+align-items: center; justify-content: space-between;}
+header > a {margin-left: 20px;}
+header nav {width: 55%;}
+.mainmenu {display: flex;}
+.mainmenu > li {flex: 1; position: relative;}
+.mainmenu > li > a {display: block; text-align: center; padding: 15px 30px;}
+.mainmenu > li > a:hover {background-color: blue; font-weight: bold;}
+.submenu {width: 100%; position: absolute; z-index: 998; display: none;}
+.submenu > li a {display: block; text-align: center; padding: 10px 30px; background-color: grey;}
+.submenu > li a:hover {background-color: black; font-weight: bold;}
+.sliding {height: 300px; overflow: hidden;}
+.slide {position: relative;}
+.slide p {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+background-color: rgb(0,255,255,0.5); color: #fff; width: 400px; height: 75px;
+text-align: center; line-height: 75px;}
+.contents {height: 200px; display: flex;}
+.things {flex: 1;}
+.things a, .things span {color: #333333;}
+.tabMenu {height: 36px;}
+.tabContents {height: 164px;}
+.active {display: block; background-color: skyblue;}
+.btn li {display: inline-block;}
+.btn li a {display: block; padding: 7.5px; font-weight: bold;}
+.notice {background-color: skyblue;}
+.notice li {padding: 10px;}
+.notice li span {float: right; padding-right: 10px;}
+.gallery {display: none; height: 100%; padding: 10px;}
+.gallery li {display: inline-block; width: 32%; margin: 15px 1px 0 0;}
+.gallery li a img {width: 100%;}
+.banner, .go {flex: 1; position: relative;}
+.banner p, .go p {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+background-color: rgb(0,255,255,0.5); color: #fff; width: 100px; height: 50px;
+text-align: center; line-height: 50px;}
+footer {height: 100px; display: flex; background-color: lightgrey; 
+display: flex; align-items: center; padding: 0 10px;}
+footer a {flex: 2;}
+.menu {flex: 3; text-align: center;}
+.menu ul {margin-bottom: 20px;}
+.menu ul li {display: inline-block; width: 150px;}
+.menu ul li a {color: #333333;}

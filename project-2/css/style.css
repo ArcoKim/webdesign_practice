@@ -1,0 +1,53 @@
+@charset "utf-8";
+* {margin: 0; padding: 0;}
+#wrap {width: 1200px; margin: 0 auto; box-sizing: border-box; 
+font-family: '맑은 고딕'; position: relative;}
+ul {list-style-type: none;}
+a {text-decoration: none; color: #fff;}
+
+.menubarBg {position: absolute; background-color: yellowgreen; width: 100%;
+height: 130px; top: 80px; display: none; z-index: 996;}
+.popupBg {position: absolute; background-color: rgb(0,0,0,0.5);
+width: 100%; height: 100%; z-index: 998; display: none;}
+.popup {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+background-color: #fff; width: 600px; height: 200px; z-index: 999;
+border: 1px solid black; text-align: center;}
+.popup h2 {margin: 20px;}
+.popup p {margin: 20px;}
+.popup button {float: right; margin-right: 20px;}
+header {height: 100px; background-color: green; display: flex; 
+align-items: center; justify-content: space-between;}
+header > a {width: 35%; margin-left: 25px;}
+nav {width: 65%; margin-right: 25px;}
+.menubar {display: flex;}
+.menubar > li {position: relative; width: 25%;}
+.menubar > li > a {display: block; padding: 20px 40px; text-align: center;}
+.submenu {position: absolute; width: 100%; display: none; z-index: 997;}
+.submenu a {display: block; text-align: center; padding: 10px 40px;
+background-color: yellowgreen;}
+.menubar > li > a:hover {background-color: lime; font-weight: bold; color: #000;}
+.submenu > li a:hover {background-color: lightgreen; font-weight: bold; color: #000;}
+
+section {height: 500px;}
+.slide-pp {height: 300px; overflow: hidden;}
+.slide-p {width: 300%; display: flex;}
+.slide {position: relative;}
+.slide span {position: absolute; background-color: rgb(0,255,0,0.5); padding: 10px 15px;
+text-align: center; top: 0; left: 0;}
+.contents {height: 200px; display: flex;}
+.contents > div {width: 400px;}
+.notice {background-color: limegreen; height: 100%;}
+.bar {border: 1px solid white; display: block; padding: 10px 15px;
+font-weight: bold; width: 65px; text-align: center; color: #fff;}
+.cont li {padding: 7.5px;}
+.cont li span {float:right; color: #fff;}
+.cont li:hover a, .cont li:hover span {font-weight: bold; color: #000;}
+.gallery {background-color: mediumspringgreen;}
+.gallery a:not(.bar) {display: inline-block; margin: 30px 0 0 20px; width: 25%;}
+.gallery a img {width: 100%;}
+.banner {position: relative;}
+.banner span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+padding: 10px 15px; background-color: rgb(255,255,255,0.5); color: #000; font-weight: bold;}
+
+footer {display: flex; align-items: center; height: 100px; background-color: gray;
+justify-content: space-between; padding: 0 10px;}
