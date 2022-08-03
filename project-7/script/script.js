@@ -10,4 +10,10 @@ $(document).ready(function() {
             $(".slides").css({"margin-top":"0px"})
         })
     }, 3000)
+    $(".details li:first").click(function() {
+        $(".popupBg").show()
+    })
+    $(".popup button").click(function() {
+        $(".popupBg").hide()
+    })
 })
